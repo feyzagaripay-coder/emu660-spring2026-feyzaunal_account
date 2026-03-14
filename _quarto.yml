@@ -15,4 +15,10 @@ website:
       - href: project.qmd
         text: Project
 
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+
 
