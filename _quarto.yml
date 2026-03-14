@@ -1,5 +1,16 @@
 project:
-  title: "emu660-spring2026-feyzaunal_account"
+  type: website
+  output-dir: docs
 
+website:
+  title: "EMU660 - Feyza Ünal"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: assignments.qmd
+        text: Assignments
 
 
