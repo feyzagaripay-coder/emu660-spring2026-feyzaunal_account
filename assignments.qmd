@@ -1,0 +1,11 @@
+---
+title: "Assignments"
+format: html
+---
+#Assignments 
+
+Below are my assignments.
+
+-[Assignment 1](assignment-1.qmd)
+
+-[Assignment 2](assignment-2.qmd)
