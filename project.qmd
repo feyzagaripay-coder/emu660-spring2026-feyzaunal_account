@@ -1,0 +1,22 @@
+---
+title: "Project"
+format: html
+---
+
+# Project
+
+## Project Overview and Scope
+
+Write the overview and scope of your project here.
+
+## Data
+
+Describe the data you will use in your project.
+
+## Analysis
+
+Explain the analysis methods you will use.
+
+## Key Takeaways
+
+Summarize the main points and expected findings of your project.

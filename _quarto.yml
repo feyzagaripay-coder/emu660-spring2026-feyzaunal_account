@@ -12,5 +12,7 @@ website:
         text: About
       - href: assignments.qmd
         text: Assignments
+      - href: project.qmd
+        text: Project
 
 
