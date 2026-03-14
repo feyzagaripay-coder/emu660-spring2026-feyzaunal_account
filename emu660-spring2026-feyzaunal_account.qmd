@@ -14,7 +14,7 @@ format: html
 
 Welcome to my EMU660 course website.
 
-This website contains my assignments and project work for theEMU 660 course.
+This website contains my assignments and project work for theEMU 660 course
 
 # About Me
 My name is Feyza Ünal.
