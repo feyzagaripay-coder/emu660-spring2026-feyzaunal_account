@@ -1,10 +1,4 @@
----
-title: "emu660-spring2026-feyzaunal_account"
----
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 ---
 title: "EMU660 - Feyza Ünal"
 format: html
