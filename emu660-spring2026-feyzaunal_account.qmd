@@ -5,3 +5,22 @@ title: "emu660-spring2026-feyzaunal_account"
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+---
+title: "EMU660 - Feyza Ünal"
+format: html
+---
+
+# Welcome
+
+Welcome to my EMU660 course website.
+
+This website contains my assignments and project work for theEMU 660 course.
+
+# About Me
+My name is Feyza Ünal.
+I am a student in the EMU660 course.
+
+# Assignments
+- Assignment 1
+- Assignment 2
+- Assignment 3
