@@ -25,7 +25,7 @@
     "href": "project.html",
     "title": "Project",
     "section": "",
-    "text": "Write the overview and scope of your project here.\n\n\n\nDescribe the data you will use in your project.\n\n\n\nExplain the analysis methods you will use.\n\n\n\nSummarize the main points and expected findings of your project."
+    "text": "Write the overview and scope of your project here."
   },
   {
     "objectID": "project.html#project-overview-and-scope",
@@ -38,21 +38,21 @@
     "objectID": "project.html#data",
     "href": "project.html#data",
     "title": "Project",
-    "section": "",
-    "text": "Describe the data you will use in your project."
+    "section": "Data",
+    "text": "Data\nDescribe the data you will use in your project."
   },
   {
     "objectID": "project.html#analysis",
     "href": "project.html#analysis",
     "title": "Project",
-    "section": "",
-    "text": "Explain the analysis methods you will use."
+    "section": "Analysis",
+    "text": "Analysis\nExplain the analysis methods you will use."
   },
   {
     "objectID": "project.html#key-takeaways",
     "href": "project.html#key-takeaways",
     "title": "Project",
-    "section": "",
-    "text": "Summarize the main points and expected findings of your project."
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nSummarize the main points and expected findings of your project."
   }
 ]

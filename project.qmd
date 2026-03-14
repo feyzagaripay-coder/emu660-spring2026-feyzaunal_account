@@ -3,8 +3,6 @@ title: "Project"
 format: html
 ---
 
-# Project
-
 ## Project Overview and Scope
 
 Write the overview and scope of your project here.
