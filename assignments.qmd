@@ -2,10 +2,10 @@
 title: "Assignments"
 format: html
 ---
-#Assignments 
+##Assignments 
 
 Below are my assignments.
 
--[Assignment 1](assignment-1.qmd)
+-[Assignment 1](assignment-1.html)
 
--[Assignment 2](assignment-2.qmd)
+-[Assignment 2](assignment-2.html)
