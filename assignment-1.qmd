@@ -6,42 +6,52 @@ format: html
 This page contains my Assignment 1 work.
 
 ---
-title: "Assignment 1"
-format: html
+
+## Video Summary
+
+The video discusses the relationship between Data Science and Industrial Engineering. 
+The speakers explain how data science techniques can be used to improve decision-making in engineering systems and business processes. 
+
+They emphasize that modern organizations generate large amounts of data and industrial engineers can use this data to optimize production systems, logistics, and operations. 
+The talk also highlights the importance of programming, statistics, and analytical thinking for engineers who want to work in data-driven environments.
+
+Overall, the video shows how data science tools help industrial engineers analyze complex systems and make more efficient and informed decisions.
+
 ---
 
-## Introduction
+## Open-ended Question
 
-This assignment focuses on decision making with analytics.  
-The goal of this assignment is to analyze a dataset and apply analytical methods to support decision making.
+How can data science improve decision-making in industrial engineering?
 
-## Problem Description
+**Answer**
 
-In this assignment, we investigate a decision-making problem using available data.  
-The objective is to understand the relationships between variables and draw insights that can support better decisions.
+Data science helps industrial engineers analyze large datasets, identify patterns, and optimize processes. By using statistical analysis and machine learning techniques, engineers can make better predictions and improve operational efficiency.
 
-## Data
+---
 
-The dataset used in this assignment contains observations related to the problem being analyzed.  
-The variables represent different characteristics that may influence the decision outcome.
+## Multiple Choice Question
 
-## Methodology
+Which skill is essential for combining data science with industrial engineering?
 
-The analysis will include:
+A) Artistic drawing  
+B) Statistical analysis  
+C) Musical composition  
+D) Architecture design  
 
-- Data exploration  
-- Descriptive statistics  
-- Visualization  
-- Analytical interpretation  
+**Correct Answer:** B) Statistical analysis
 
-These methods help identify patterns and relationships in the data.
+---
 
-## Results
+## Custom Summary Function
 
-The results of the analysis will provide insights into the factors affecting the decision problem.  
-Visualizations and summary statistics will be used to support the findings.
-
-## Conclusion
-
-This assignment demonstrates how analytical tools can support decision making.  
-The findings highlight important patterns in the data and provide a foundation for further analysis.
+```{r}
+compute_stats <- function(x){
+  list(
+    mean = mean(x),
+    median = median(x),
+    variance = var(x),
+    IQR = IQR(x),
+    min = min(x),
+    max = max(x)
+  )
+}

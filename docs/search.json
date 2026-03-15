@@ -58,7 +58,7 @@
   {
     "objectID": "assignment-1.html",
     "href": "assignment-1.html",
-    "title": "Assignment 1",
+    "title": "Assignment-1",
     "section": "",
     "text": "This page contains my Assignment 1 work."
   },
@@ -131,5 +131,33 @@
     "title": "About Me",
     "section": "",
     "text": "My name is Feyza Ünal.\nI am currently studying Industrial Engineering.\nThis website was created as part of the EMU660 course to showcase my assignments and coursework.\nMy interests include data analysis, statistics, and industrial engineering applications."
+  },
+  {
+    "objectID": "assignment-1.html#video-summary",
+    "href": "assignment-1.html#video-summary",
+    "title": "Assignment-1",
+    "section": "Video Summary",
+    "text": "Video Summary\nThe video discusses the relationship between Data Science and Industrial Engineering. The speakers explain how data science techniques can be used to improve decision-making in engineering systems and business processes.\nThey emphasize that modern organizations generate large amounts of data and industrial engineers can use this data to optimize production systems, logistics, and operations. The talk also highlights the importance of programming, statistics, and analytical thinking for engineers who want to work in data-driven environments.\nOverall, the video shows how data science tools help industrial engineers analyze complex systems and make more efficient and informed decisions."
+  },
+  {
+    "objectID": "assignment-1.html#open-ended-question",
+    "href": "assignment-1.html#open-ended-question",
+    "title": "Assignment-1",
+    "section": "Open-ended Question",
+    "text": "Open-ended Question\nHow can data science improve decision-making in industrial engineering?\nAnswer\nData science helps industrial engineers analyze large datasets, identify patterns, and optimize processes. By using statistical analysis and machine learning techniques, engineers can make better predictions and improve operational efficiency."
+  },
+  {
+    "objectID": "assignment-1.html#multiple-choice-question",
+    "href": "assignment-1.html#multiple-choice-question",
+    "title": "Assignment-1",
+    "section": "Multiple Choice Question",
+    "text": "Multiple Choice Question\nWhich skill is essential for combining data science with industrial engineering?\n\nArtistic drawing\n\nStatistical analysis\n\nMusical composition\n\nArchitecture design\n\nCorrect Answer: B) Statistical analysis"
+  },
+  {
+    "objectID": "assignment-1.html#custom-summary-function",
+    "href": "assignment-1.html#custom-summary-function",
+    "title": "Assignment-1",
+    "section": "Custom Summary Function",
+    "text": "Custom Summary Function\ncompute_stats &lt;- function(x){ list( mean = mean(x), median = median(x), variance = var(x), IQR = IQR(x), min = min(x), max = max(x) ) }"
   }
 ]
