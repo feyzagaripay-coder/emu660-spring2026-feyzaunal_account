@@ -1,12 +1,15 @@
+
 ---
 title: "About Me"
 format: html
 ---
 
-#About Me
+# About Me
 
-My name is Feyza Ünal.
+My name is **Feyza Ünal**.
 
-I am a student in the EMU660 course.
+I am currently studying **Industrial Engineering**.
 
-This website presents my assignments and project work.
+This website was created as part of the **EMU660 course** to showcase my assignments and coursework.
+
+My interests include data analysis, statistics, and industrial engineering applications.
