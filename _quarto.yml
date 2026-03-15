@@ -14,7 +14,9 @@ website:
         text: Assignments
       - href: project.qmd
         text: Project
-
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/feyzagaripay
 format:
   html:
     theme: cosmo
