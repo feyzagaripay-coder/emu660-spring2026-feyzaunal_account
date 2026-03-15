@@ -11,3 +11,7 @@ I am currently studying **Industrial Engineering**.
 This website was created as part of the **EMU660 course** to showcase my assignments and coursework.
 
 My interests include data analysis, statistics, and industrial engineering applications.
+
+## CV
+
+[Download my CV](CV.pdf)

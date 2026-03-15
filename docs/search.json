@@ -159,5 +159,12 @@
     "title": "Assignment-1",
     "section": "Custom Summary Function",
     "text": "Custom Summary Function\ncompute_stats &lt;- function(x){ list( mean = mean(x), median = median(x), variance = var(x), IQR = IQR(x), min = min(x), max = max(x) ) }"
+  },
+  {
+    "objectID": "about.html#cv",
+    "href": "about.html#cv",
+    "title": "About Me",
+    "section": "CV",
+    "text": "CV\nDownload my CV"
   }
 ]
