@@ -168,21 +168,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#video-summary" id="toc-video-summary" class="nav-link active" data-scroll-target="#video-summary">Video Summary</a></li>
   <li><a href="#open-ended-question" id="toc-open-ended-question" class="nav-link" data-scroll-target="#open-ended-question">Open-ended Question</a></li>
   <li><a href="#multiple-choice-question" id="toc-multiple-choice-question" class="nav-link" data-scroll-target="#multiple-choice-question">Multiple Choice Question</a></li>
-  <li><a href="#personal-variables" id="toc-personal-variables" class="nav-link" data-scroll-target="#personal-variables">Personal variables</a></li>
-  <li><a href="#calculate-k" id="toc-calculate-k" class="nav-link" data-scroll-target="#calculate-k">Calculate k</a></li>
-  <li><a href="#custom-statistical-summary-function" id="toc-custom-statistical-summary-function" class="nav-link" data-scroll-target="#custom-statistical-summary-function">Custom statistical summary function</a></li>
-  <li><a href="#using-a-for-loop" id="toc-using-a-for-loop" class="nav-link" data-scroll-target="#using-a-for-loop">Using a for loop</a></li>
-  <li><a href="#using-sapply" id="toc-using-sapply" class="nav-link" data-scroll-target="#using-sapply">Using sapply</a></li>
-  <li><a href="#using-apply" id="toc-using-apply" class="nav-link" data-scroll-target="#using-apply">Using apply</a></li>
-  <li><a href="#display-k-rows-of-the-original-dataset" id="toc-display-k-rows-of-the-original-dataset" class="nav-link" data-scroll-target="#display-k-rows-of-the-original-dataset">Display k rows of the original dataset</a></li>
-  <li><a href="#total-number-of-na-values" id="toc-total-number-of-na-values" class="nav-link" data-scroll-target="#total-number-of-na-values">Total number of NA values</a></li>
-  <li><a href="#na-values-per-column-sorted" id="toc-na-values-per-column-sorted" class="nav-link" data-scroll-target="#na-values-per-column-sorted">NA values per column (sorted)</a></li>
-  <li><a href="#top-8-columns-with-most-na-values" id="toc-top-8-columns-with-most-na-values" class="nav-link" data-scroll-target="#top-8-columns-with-most-na-values">Top 8 columns with most NA values</a></li>
-  <li><a href="#create-new-dataset-without-overwriting-original" id="toc-create-new-dataset-without-overwriting-original" class="nav-link" data-scroll-target="#create-new-dataset-without-overwriting-original">Create new dataset without overwriting original</a></li>
-  <li><a href="#replace-na-values" id="toc-replace-na-values" class="nav-link" data-scroll-target="#replace-na-values">Replace NA values</a></li>
-  <li><a href="#display-k-rows-of-the-new-dataset" id="toc-display-k-rows-of-the-new-dataset" class="nav-link" data-scroll-target="#display-k-rows-of-the-new-dataset">Display k rows of the new dataset</a></li>
-  <li><a href="#remaining-na-values" id="toc-remaining-na-values" class="nav-link" data-scroll-target="#remaining-na-values">Remaining NA values</a></li>
-  <li><a href="#check-if-any-na-remains" id="toc-check-if-any-na-remains" class="nav-link" data-scroll-target="#check-if-any-na-remains">Check if any NA remains</a></li>
   </ul>
 </nav>
     </div>
@@ -239,16 +224,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Correct Answer:</strong> B) Statistical analysis</p>
 <hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Özge"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">1996</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># k sayısı hesaplama</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> (<span class="fu">nchar</span>(my_first) <span class="sc">+</span> my_birth_year) <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">+</span> <span class="dv">8</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"calculated my k :"</span>, k, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Personal variables</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Feyza"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">1990</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate k</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> (<span class="fu">nchar</span>(my_first) <span class="sc">+</span> my_birth_year) <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">+</span> <span class="dv">8</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Calculated value of k:"</span>, k, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>calculated my k : 13 </code></pre>
+<pre><code>Calculated value of k: 8 </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># function</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Custom statistical summary function</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>compute_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
@@ -260,11 +246,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. using sapply</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- sapply Sonuçları ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Using sapply</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- sapply results ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
---- sapply Sonuçları ---</code></pre>
+--- sapply results ---</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(mtcars, compute_stats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -283,11 +269,11 @@ iqr      1         1         1         2
 min      0         0         3         1       
 max      1         1         5         8       </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. using apply</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- apply Sonuçları ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using apply</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- apply results ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
---- apply Sonuçları ---</code></pre>
+--- apply results ---</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>apply_results <span class="ot">&lt;-</span> <span class="fu">apply</span>(<span class="fu">as.matrix</span>(mtcars), <span class="dv">2</span>, compute_stats)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(apply_results)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -511,11 +497,11 @@ $carb$min
 $carb$max
 [1] 8</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for döngüsü ile mtcars analizi </span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- For Döngüsü Sonuçları ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using for loop</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">--- For loop results ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
---- For Döngüsü Sonuçları ---</code></pre>
+--- For loop results ---</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(mtcars)) {</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">colnames</span>(mtcars)[i], <span class="st">":</span><span class="sc">\n</span><span class="st">"</span>)</span>
@@ -731,88 +717,169 @@ $min
 $max
 [1] 8</code></pre>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Task 3-d</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>#| label: task-3-c #| echo: true</p>
-</section>
-<section id="personal-variables" class="level1">
-<h1>Personal variables</h1>
-<p>my_first &lt;- “Feyza” my_birth_year &lt;- 1990</p>
-</section>
-<section id="calculate-k" class="level1">
-<h1>Calculate k</h1>
-<p>k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 cat(“Calculated value of k:”, k, “”)</p>
-</section>
-<section id="custom-statistical-summary-function" class="level1">
-<h1>Custom statistical summary function</h1>
-<p>compute_stats &lt;- function(x) { list( mean = mean(x, na.rm = TRUE), median = median(x, na.rm = TRUE), variance = var(x, na.rm = TRUE), IQR = IQR(x, na.rm = TRUE), minimum = min(x, na.rm = TRUE), maximum = max(x, na.rm = TRUE) ) }</p>
-</section>
-<section id="using-a-for-loop" class="level1">
-<h1>Using a for loop</h1>
-<p>cat(“— Results using a for loop —”)</p>
-<p>for (i in 1:ncol(mtcars)) { cat(“:”, colnames(mtcars)[i], “”) print(compute_stats(mtcars[[i]])) }</p>
-</section>
-<section id="using-sapply" class="level1">
-<h1>Using sapply</h1>
-<p>cat(“— Results using sapply —”) sapply(mtcars, compute_stats)</p>
-</section>
-<section id="using-apply" class="level1">
-<h1>Using apply</h1>
-<p>cat(“— Results using apply —”) apply(as.matrix(mtcars), 2, compute_stats)  ⁠</p>
-<p>⁠ {r} #| label: task-3-d #| echo: true</p>
-<p>library(dslabs) data(“polls_us_election_2016”)</p>
-<p>cat(“of k:”, k, “”)</p>
-</section>
-<section id="display-k-rows-of-the-original-dataset" class="level1">
-<h1>Display k rows of the original dataset</h1>
-<p>cat(“— k rows from the original dataset —”)</p>
-<p>if (k %% 2 == 0) { print(head(polls_us_election_2016, k)) } else { print(tail(polls_us_election_2016, k)) }</p>
-</section>
-<section id="total-number-of-na-values" class="level1">
-<h1>Total number of NA values</h1>
-<p>cat(“number of NA values in the dataset:”) print(sum(is.na(polls_us_election_2016)))</p>
-</section>
-<section id="na-values-per-column-sorted" class="level1">
-<h1>NA values per column (sorted)</h1>
-<p>na_per_column &lt;- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)</p>
-<p>cat(“values per column (sorted largest to smallest):”) print(na_per_column)</p>
-</section>
-<section id="top-8-columns-with-most-na-values" class="level1">
-<h1>Top 8 columns with most NA values</h1>
-<p>cat(“ columns with the highest number of NA values:”) print(head(na_per_column, 8))</p>
-</section>
-<section id="create-new-dataset-without-overwriting-original" class="level1">
-<h1>Create new dataset without overwriting original</h1>
-<p>new_data &lt;- polls_us_election_2016</p>
-</section>
-<section id="replace-na-values" class="level1">
-<h1>Replace NA values</h1>
-<p>for (i in 1:ncol(new_data)) {</p>
-<p>if (is.numeric(new_data[[i]])) {</p>
-<pre><code>new_data[[i]][is.na(new_data[[i]])] &lt;- my_birth_year + k</code></pre>
-<p>} else if (is.character(new_data[[i]])) {</p>
-<pre><code>new_data[[i]][is.na(new_data[[i]])] &lt;- paste0(my_first, "_", k)</code></pre>
-<p>} else if (is.factor(new_data[[i]])) {</p>
-<pre><code>temp &lt;- as.character(new_data[[i]])
-temp[is.na(temp)] &lt;- paste0(my_first, "_", k)
-new_data[[i]] &lt;- factor(temp)</code></pre>
-<p>} }</p>
-</section>
-<section id="display-k-rows-of-the-new-dataset" class="level1">
-<h1>Display k rows of the new dataset</h1>
-<p>cat(“— k rows from the new dataset —”)</p>
-<p>if (k %% 2 == 0) { print(head(new_data, k)) } else { print(tail(new_data, k)) }</p>
-</section>
-<section id="remaining-na-values" class="level1">
-<h1>Remaining NA values</h1>
-<p>cat(“NA values remaining in new_data:”) print(sum(is.na(new_data)))</p>
-</section>
-<section id="check-if-any-na-remains" class="level1">
-<h1>Check if any NA remains</h1>
-<p>cat(“new_data still contain NA values?”) print(anyNA(new_data))  ⁠</p>
-<pre><code>⁠*AI Disclosure:* I utilized AI tools (Gemini/ChatGPT) to assist in structuring the R code and translating the assignment requirements.</code></pre>
-<blockquote class="blockquote">
-<p>⁠<em>Prompt used:</em> “Could you help me write R code for my EMU660 assignment that calculates k, analyzes the mtcars dataset, computes summary statistics, and replaces NA values in the polls_us_election_2016 dataset?”</p>
-</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"polls_us_election_2016"</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>data_original <span class="ot">&lt;-</span> polls_us_election_2016</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Display k rows</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Rows from original dataset:</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Rows from original dataset:</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">head</span>(data_original, k))</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">tail</span>(data_original, k))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  state  startdate    enddate
+1  U.S. 2016-11-03 2016-11-06
+2  U.S. 2016-11-01 2016-11-07
+3  U.S. 2016-11-02 2016-11-06
+4  U.S. 2016-11-04 2016-11-07
+5  U.S. 2016-11-03 2016-11-06
+6  U.S. 2016-11-03 2016-11-06
+7  U.S. 2016-11-02 2016-11-06
+8  U.S. 2016-11-03 2016-11-05
+                                                    pollster grade samplesize
+1                                   ABC News/Washington Post    A+       2220
+2                                    Google Consumer Surveys     B      26574
+3                                                      Ipsos    A-       2195
+4                                                     YouGov     B       3677
+5                                           Gravis Marketing    B-      16639
+6 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                    CBS News/New York Times    A-       1426
+8                               NBC News/Wall Street Journal    A-       1282
+  population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1         lv           47.00         43.00            4.00               NA
+2         lv           38.03         35.69            5.46               NA
+3         lv           42.00         39.00            6.00               NA
+4         lv           45.00         41.00            5.00               NA
+5         rv           47.00         43.00            3.00               NA
+6         lv           48.00         44.00            3.00               NA
+7         lv           45.00         41.00            5.00               NA
+8         lv           44.00         40.00            6.00               NA
+  adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1        45.20163      41.72430        4.626221               NA
+2        43.34557      41.21439        5.175792               NA
+3        42.02638      38.81620        6.844734               NA
+4        45.65676      40.92004        6.069454               NA
+5        46.84089      42.33184        3.726098               NA
+6        49.02208      43.95631        3.057876               NA
+7        45.11649      40.92722        4.341786               NA
+8        43.58576      40.77325        5.365788               NA</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total NA count</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Total NA values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(data_original)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Total NA values: 11604 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA per column</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>na_per_column <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">colSums</span>(<span class="fu">is.na</span>(data_original)), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">NA values per column (top 8):</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+NA values per column (top 8):</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(na_per_column, <span class="dv">8</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson 
+            4178             4178             1409             1409 
+           grade       samplesize            state        startdate 
+             429                1                0                0 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace NA values</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> data_original</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(new_data)) {</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(new_data[[i]])) {</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> my_birth_year <span class="sc">+</span> k</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>    new_data[[i]] <span class="ot">&lt;-</span> <span class="fu">as.character</span>(new_data[[i]])</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Display rows from new dataset</span></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Rows from new dataset:</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Rows from new dataset:</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">head</span>(new_data, k))</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">tail</span>(new_data, k))</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  state  startdate    enddate
+1  U.S. 2016-11-03 2016-11-06
+2  U.S. 2016-11-01 2016-11-07
+3  U.S. 2016-11-02 2016-11-06
+4  U.S. 2016-11-04 2016-11-07
+5  U.S. 2016-11-03 2016-11-06
+6  U.S. 2016-11-03 2016-11-06
+7  U.S. 2016-11-02 2016-11-06
+8  U.S. 2016-11-03 2016-11-05
+                                                    pollster grade samplesize
+1                                   ABC News/Washington Post    A+       2220
+2                                    Google Consumer Surveys     B      26574
+3                                                      Ipsos    A-       2195
+4                                                     YouGov     B       3677
+5                                           Gravis Marketing    B-      16639
+6 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                    CBS News/New York Times    A-       1426
+8                               NBC News/Wall Street Journal    A-       1282
+  population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1         lv           47.00         43.00            4.00             1998
+2         lv           38.03         35.69            5.46             1998
+3         lv           42.00         39.00            6.00             1998
+4         lv           45.00         41.00            5.00             1998
+5         rv           47.00         43.00            3.00             1998
+6         lv           48.00         44.00            3.00             1998
+7         lv           45.00         41.00            5.00             1998
+8         lv           44.00         40.00            6.00             1998
+  adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1        45.20163      41.72430        4.626221             1998
+2        43.34557      41.21439        5.175792             1998
+3        42.02638      38.81620        6.844734             1998
+4        45.65676      40.92004        6.069454             1998
+5        46.84089      42.33184        3.726098             1998
+6        49.02208      43.95631        3.057876             1998
+7        45.11649      40.92722        4.341786             1998
+8        43.58576      40.77325        5.365788             1998</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remaining NA</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Remaining NA values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(new_data)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Remaining NA values: 0 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check any NA</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Any NA left:"</span>, <span class="fu">anyNA</span>(new_data), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Any NA left: FALSE </code></pre>
+</div>
+</div>
+<p><strong>AI Disclosure</strong></p>
+<p>I used AI tools (ChatGPT) to help structure the R code and better understand the assignment requirements.</p>
+<p>Prompt used:<br>
+“Write R code for an assignment that calculates k, analyzes mtcars dataset with cus</p>
 
 
 </section>

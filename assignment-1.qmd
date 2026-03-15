@@ -41,47 +41,6 @@ D) Architecture design
 **Correct Answer:** B) Statistical analysis
 
 ---
-
-```{r}
-#| label: task-3-c
-#| echo: true
-
-my_first <- "Özge"
-my_birth_year <- 1996
-
-# k sayısı hesaplama
-k <- (nchar(my_first) + my_birth_year) %% 15 + 8
-cat("calculated my k :", k, "\n")
-
-# function
-compute_stats <- function(x) {
-  list(
-    mean = mean(x, na.rm = TRUE),
-    median = median(x, na.rm = TRUE),
-    variance = var(x, na.rm = TRUE),
-    iqr = IQR(x, na.rm = TRUE),
-    min = min(x, na.rm = TRUE),
-    max = max(x, na.rm = TRUE)
-  )
-}
-
-# 1. using sapply
-cat("\n--- sapply Sonuçları ---\n")
-sapply(mtcars, compute_stats)
-
-# 2. using apply
-cat("\n--- apply Sonuçları ---\n")
-apply_results <- apply(as.matrix(mtcars), 2, compute_stats)
-print(apply_results)
-
-# for döngüsü ile mtcars analizi 
-cat("\n--- For Döngüsü Sonuçları ---\n")
-for (i in 1:ncol(mtcars)) {
-  cat(colnames(mtcars)[i], ":\n")
-  print(compute_stats(mtcars[[i]]))
-}
-```
-
 ```{r}
 #| label: task-3-c
 #| echo: true
@@ -100,86 +59,77 @@ compute_stats <- function(x) {
     mean = mean(x, na.rm = TRUE),
     median = median(x, na.rm = TRUE),
     variance = var(x, na.rm = TRUE),
-    IQR = IQR(x, na.rm = TRUE),
-    minimum = min(x, na.rm = TRUE),
-    maximum = max(x, na.rm = TRUE)
+    iqr = IQR(x, na.rm = TRUE),
+    min = min(x, na.rm = TRUE),
+    max = max(x, na.rm = TRUE)
   )
 }
 
-# Using a for loop
-cat("\n--- Results using a for loop ---\n")
-
-for (i in 1:ncol(mtcars)) {
-  cat("\nColumn:", colnames(mtcars)[i], "\n")
-  print(compute_stats(mtcars[[i]]))
-}
-
 # Using sapply
-cat("\n--- Results using sapply ---\n")
+cat("\n--- sapply results ---\n")
 sapply(mtcars, compute_stats)
 
 # Using apply
-cat("\n--- Results using apply ---\n")
-apply(as.matrix(mtcars), 2, compute_stats)
- ⁠
+cat("\n--- apply results ---\n")
+apply_results <- apply(as.matrix(mtcars), 2, compute_stats)
+print(apply_results)
 
-⁠ {r}
+# Using for loop
+cat("\n--- For loop results ---\n")
+for (i in 1:ncol(mtcars)) {
+  cat(colnames(mtcars)[i], ":\n")
+  print(compute_stats(mtcars[[i]]))
+}
+
+### Task 3-d
+```{r}
 #| label: task-3-d
 #| echo: true
 
 library(dslabs)
 data("polls_us_election_2016")
 
-cat("\nValue of k:", k, "\n")
+data_original <- polls_us_election_2016
 
-# Display k rows of the original dataset
-cat("\n--- k rows from the original dataset ---\n")
+# Display k rows
+cat("\nRows from original dataset:\n")
 
 if (k %% 2 == 0) {
-  print(head(polls_us_election_2016, k))
+  print(head(data_original, k))
 } else {
-  print(tail(polls_us_election_2016, k))
+  print(tail(data_original, k))
 }
 
-# Total number of NA values
-cat("\nTotal number of NA values in the dataset:\n")
-print(sum(is.na(polls_us_election_2016)))
+# Total NA count
+cat("\nTotal NA values:", sum(is.na(data_original)), "\n")
 
-# NA values per column (sorted)
-na_per_column <- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)
+# NA per column
+na_per_column <- sort(colSums(is.na(data_original)), decreasing = TRUE)
 
-cat("\nNA values per column (sorted largest to smallest):\n")
-print(na_per_column)
-
-# Top 8 columns with most NA values
-cat("\nTop 8 columns with the highest number of NA values:\n")
+cat("\nNA values per column (top 8):\n")
 print(head(na_per_column, 8))
 
-# Create new dataset without overwriting original
-new_data <- polls_us_election_2016
-
 # Replace NA values
-for (i in 1:ncol(new_data)) {
-  
-  if (is.numeric(new_data[[i]])) {
-    
+new_data <- data_original
+
+for(i in 1:ncol(new_data)) {
+
+  if(is.numeric(new_data[[i]])) {
+
     new_data[[i]][is.na(new_data[[i]])] <- my_birth_year + k
-    
-  } else if (is.character(new_data[[i]])) {
-    
+
+  } else {
+
+    new_data[[i]] <- as.character(new_data[[i]])
+
     new_data[[i]][is.na(new_data[[i]])] <- paste0(my_first, "_", k)
-    
-  } else if (is.factor(new_data[[i]])) {
-    
-    temp <- as.character(new_data[[i]])
-    temp[is.na(temp)] <- paste0(my_first, "_", k)
-    new_data[[i]] <- factor(temp)
-    
+
   }
+
 }
 
-# Display k rows of the new dataset
-cat("\n--- k rows from the new dataset ---\n")
+# Display rows from new dataset
+cat("\nRows from new dataset:\n")
 
 if (k %% 2 == 0) {
   print(head(new_data, k))
@@ -187,15 +137,17 @@ if (k %% 2 == 0) {
   print(tail(new_data, k))
 }
 
-# Remaining NA values
-cat("\nTotal NA values remaining in new_data:\n")
-print(sum(is.na(new_data)))
+# Remaining NA
+cat("\nRemaining NA values:", sum(is.na(new_data)), "\n")
 
-# Check if any NA remains
-cat("\nDoes new_data still contain NA values?\n")
-print(anyNA(new_data))
- ⁠
+# Check any NA
+cat("\nAny NA left:", anyNA(new_data), "\n")
 
-	⁠*AI Disclosure:* I utilized AI tools (Gemini/ChatGPT) to assist in structuring the R code and translating the assignment requirements.
->
-	⁠*Prompt used:* "Could you help me write R code for my EMU660 assignment that calculates k, analyzes the mtcars dataset, computes summary statistics, and replaces NA values in the polls_us_election_2016 dataset?"
+```
+
+**AI Disclosure**
+
+I used AI tools (ChatGPT) to help structure the R code and better understand the assignment requirements.
+
+Prompt used:  
+"Write R code for an assignment that calculates k, analyzes mtcars dataset with cus
