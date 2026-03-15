@@ -54,5 +54,54 @@
     "title": "Project",
     "section": "Key Takeaways",
     "text": "Key Takeaways\nSummarize the main points and expected findings of your project."
+  },
+  {
+    "objectID": "assignment-1.html",
+    "href": "assignment-1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "This page contains my Assignment 1 work."
+  },
+  {
+    "objectID": "assignment-1.html#introduction",
+    "href": "assignment-1.html#introduction",
+    "title": "Assignment 1",
+    "section": "Introduction",
+    "text": "Introduction\nThis assignment focuses on decision making with analytics.\nThe goal of this assignment is to analyze a dataset and apply analytical methods to support decision making."
+  },
+  {
+    "objectID": "assignment-1.html#problem-description",
+    "href": "assignment-1.html#problem-description",
+    "title": "Assignment 1",
+    "section": "Problem Description",
+    "text": "Problem Description\nIn this assignment, we investigate a decision-making problem using available data.\nThe objective is to understand the relationships between variables and draw insights that can support better decisions."
+  },
+  {
+    "objectID": "assignment-1.html#data",
+    "href": "assignment-1.html#data",
+    "title": "Assignment 1",
+    "section": "Data",
+    "text": "Data\nThe dataset used in this assignment contains observations related to the problem being analyzed.\nThe variables represent different characteristics that may influence the decision outcome."
+  },
+  {
+    "objectID": "assignment-1.html#methodology",
+    "href": "assignment-1.html#methodology",
+    "title": "Assignment 1",
+    "section": "Methodology",
+    "text": "Methodology\nThe analysis will include:\n\nData exploration\n\nDescriptive statistics\n\nVisualization\n\nAnalytical interpretation\n\nThese methods help identify patterns and relationships in the data."
+  },
+  {
+    "objectID": "assignment-1.html#results",
+    "href": "assignment-1.html#results",
+    "title": "Assignment 1",
+    "section": "Results",
+    "text": "Results\nThe results of the analysis will provide insights into the factors affecting the decision problem.\nVisualizations and summary statistics will be used to support the findings."
+  },
+  {
+    "objectID": "assignment-1.html#conclusion",
+    "href": "assignment-1.html#conclusion",
+    "title": "Assignment 1",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis assignment demonstrates how analytical tools can support decision making.\nThe findings highlight important patterns in the data and provide a foundation for further analysis."
   }
 ]

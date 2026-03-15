@@ -5,3 +5,43 @@ format: html
 
 This page contains my Assignment 1 work.
 
+---
+title: "Assignment 1"
+format: html
+---
+
+## Introduction
+
+This assignment focuses on decision making with analytics.  
+The goal of this assignment is to analyze a dataset and apply analytical methods to support decision making.
+
+## Problem Description
+
+In this assignment, we investigate a decision-making problem using available data.  
+The objective is to understand the relationships between variables and draw insights that can support better decisions.
+
+## Data
+
+The dataset used in this assignment contains observations related to the problem being analyzed.  
+The variables represent different characteristics that may influence the decision outcome.
+
+## Methodology
+
+The analysis will include:
+
+- Data exploration  
+- Descriptive statistics  
+- Visualization  
+- Analytical interpretation  
+
+These methods help identify patterns and relationships in the data.
+
+## Results
+
+The results of the analysis will provide insights into the factors affecting the decision problem.  
+Visualizations and summary statistics will be used to support the findings.
+
+## Conclusion
+
+This assignment demonstrates how analytical tools can support decision making.  
+The findings highlight important patterns in the data and provide a foundation for further analysis.
