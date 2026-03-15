@@ -4,6 +4,4 @@ title: "Assignment 2"
 format: html
 ---
 
-## Assignment 2
-
 This page is reserved for Assignment 2 work.
