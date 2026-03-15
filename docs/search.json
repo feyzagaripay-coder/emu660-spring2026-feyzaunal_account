@@ -16,9 +16,9 @@
   {
     "objectID": "assingment-2.html",
     "href": "assingment-2.html",
-    "title": "assignment-2",
+    "title": "Assignment 2",
     "section": "",
-    "text": "#Assignment 2\nThis page contains my Assignment 2 work."
+    "text": "This page is reserved for Assignment 2 work."
   },
   {
     "objectID": "project.html",
@@ -103,5 +103,12 @@
     "title": "Assignment 1",
     "section": "Conclusion",
     "text": "Conclusion\nThis assignment demonstrates how analytical tools can support decision making.\nThe findings highlight important patterns in the data and provide a foundation for further analysis."
+  },
+  {
+    "objectID": "assingment-2.html#assignment-2",
+    "href": "assingment-2.html#assignment-2",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "This page is reserved for Assignment 2 work."
   }
 ]

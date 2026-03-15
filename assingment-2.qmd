@@ -1,8 +1,9 @@
+
 ---
-title: "assignment-2"
+title: "Assignment 2"
 format: html
 ---
 
-#Assignment 2
+## Assignment 2
 
-This page contains my Assignment 2 work.
+This page is reserved for Assignment 2 work.
