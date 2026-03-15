@@ -4,8 +4,6 @@ title: "About Me"
 format: html
 ---
 
-# About Me
-
 My name is **Feyza Ünal**.
 
 I am currently studying **Industrial Engineering**.
